@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shakespeare fan page!</title>
+    <link rel="icon" href="pics/favicon.ico">
+    <meta name="keywords" content="Beginner, HTML, CSS">
+    <meta name="description" content="Intern's web-project">
+    <meta name="author" content="Daria Genze">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<header id="nav">
+    <div class="top_banner">
+        <img class="top_pic" src="pics/shportrait.png" alt="портрет Шекспира">
+        <h1 class="heading">Добро пожаловать на страницу фанатов Шекспира!</h1>
+    </div>
+</header>
+
+<div class="nav">
+    <nav>
+        <a href="#bio">БИОГРАФИЯ</a> <span>│</span>
+        <a href="#hamlet">ГАМЛЕТ</a>  <span>│</span>
+        <a href="#interactive">ИНТЕРАКТИВ</a>
+        <a href="#nav" class="up">наверх↑</a>
+    </nav>
+</div>
+
+<main>
+    <button id="loveSh" class="btn">Нажмите, если любите Шекспира!</button>
+
+    <section id="bio">
+        <aside class="aside">
+            <img src="pics/ophelia.png" alt="шекспир" style="object-fit: contain; height: 150px;">
+            <table>
+                <caption>Четыре главные трагедии Шекспира</caption>
+                <tr>
+                    <th>Трагедия</th>
+                    <th>Год написания</th>
+                </tr>
+                <tr>
+                    <td>Ромео и Джульетта</td>
+                    <td>1597г.</td>
+                </tr>
+                <tr>
+                    <td>Гамлет</td>
+                    <td>1600г.</td>
+                </tr>
+                <tr>
+                    <td>Отелло</td>
+                    <td>1603г.</td>
+                </tr>
+                <tr>
+                    <td>Макбет</td>
+                    <td>1606г.</td>
+                </tr>
+            </table>
+        </aside>
+
+        <h2>Краткая биография</h2>
+        <p>Уильям Шекспир был английским драматургом, поэтом и актером, чьи работы оказали огромное влияние на мировую литературу. Однако о его жизни и творчестве известно довольно мало, и многие аспекты его биографии остаются загадкой.<br><br>
+            Шекспир родился в 1564 году в городе Стратфорд-апон-Эйвон. Он получил базовое образование в местной грамматической школе, но не поступил в университет. В начале 1580-х годов он переехал в Лондон, где начал свою карьеру в театре. Вскоре он стал известным актером и драматургом.<br><br>
+            Шекспир написал около 39 пьес, включая такие шедевры, как <cite>"Отелло"</cite>, <cite>"Ромео и Джульетта"</cite>, <cite>"Король Лир"</cite> и <cite>"Гамлет"</cite>. Его работы отличаются глубоким психологическим анализом персонажей, сложным сюжетом и богатством языка.<br><br>
+            Шекспир также был успешным предпринимателем, владельцем театра и инвестором. Он умер в 1616 году, оставив после себя богатое наследие литературных произведений, которые продолжают вдохновлять и волновать читателей и зрителей по всему миру.</p>
+    </section>
+
+    <section id="hamlet" >
+        <h2>Гамлет</h2>
+        <p>Пьеса "Гамлет" - это одна из самых известных и влиятельных пьес Уильяма Шекспира. Она была написана в начале 17-го века и считается одной из его самых великих трагедий.<br><br>
+        <img src="pics/hamlet.png" alt="Гамлет и Горацио на кладбище" style="height: 300px;" class="hamlet_pic">
+            Гамлет - принц Датский, который возвращается домой после смерти своего отца, короля. Гамлет узнает, что его отец был убит своим братом Клавдием, который затем женился на матери Гамлета, Гертруде, и стал новым королем. Гамлет ощущает глубокую боль и ярость от этого предательства и решает отомстить за смерть своего отца.<br><br>
+            Пьеса исследует темы предательства, мести, смерти и сумасшествия. Гамлет становится одержимым идеей отомстить за своего отца и начинает действовать странно, чтобы скрыть свои намерения. Он прикидывается безумным, чтобы выяснить правду о смерти своего отца и поймать Клавдия на месте преступления.<br><br>
+            Во время своих действий Гамлет сталкивается с рядом других персонажей, включая свою возлюбленную Офелию, ее отца Полония и других членов двора. Все они становятся жертвами его планов и интриг.<br><br>
+            "Гамлет" является примером великого драматического искусства. Она известна своими сложными персонажами, глубокими эмоциональными конфликтами и философскими размышлениями о жизни, смерти и смысле существования. Пьеса также известна своими знаменитыми монологами, включая "Быть или не быть: вот в чем вопрос", который стал одной из самых известных цитат Шекспира.<br><br>
+            "Гамлет" остается актуальной и популярной до сих пор. Ее темы и персонажи продолжают вдохновлять и вызывать интерес у читателей и зрителей по всему миру.</p>
+    </section>
+
+    <section id="interactive" style="margin-bottom: 80px">
+        <h2>Интерактив!</h2>
+        <div class="fullform">
+            <h3>1. Какие произведения Шекспира вы читали?</h3>
+            <form>
+                <input type="checkbox" id="play1" name="play1" value="Hamlet" class="form-control">
+                <label for="play1">Гамлет</label><br>
+                <input type="checkbox" id="play2" name="play2" value="Macbeth" class="form-control">
+                <label for="play2"> Макбет</label><br>
+                <input type="checkbox" id="play3" name="play3" value="Tempest">
+                <label for="play3"> Буря</label><br>
+                <input type="checkbox" id="play4" name="play4" value="RnJ">
+                <label for="play4">Ромео и Джульетта</label><br>
+                <input type="checkbox" id="play5" name="play5" value="Otello">
+                <label for="play5"> Отелло</label><br>
+                <input type="checkbox" id="play6" name="play6" value="MSND">
+                <label for="play6"> Сон в летнюю ночь</label><br>
+            </form>
+        </div>
+
+        <div class="fullform">
+            <h3>2. Какая ваша любимая трагедия??</h3>
+            <form>
+                <label for="fav_tragedy">Напишите название:</label>
+                <input type="text" list="tragedies" id="fav_tragedy" class="tragedies">
+                <datalist id="tragedies">
+                    <option value="Гамлет">
+                    <option value="Ромео и Джульетта">
+                    <option value="Отелло">
+                    <option value="Макбет">
+                </datalist>
+            </form>
+        </div>
+
+        <div class="fullform">
+            <h3>3. Проверьте себя!</h3>
+            <div class="details">
+                <details>
+                    <summary>Сколько лет прожил Шекспир?</summary>
+                    <p>Шекспир умер 26 апреля 1616 года в возрасте 52 лет!</p>
+                </details>
+                <details>
+                    <summary>Сколько Пьес написал Шекспир?</summary>
+                    <p>Уильям Шекспир написал около 38 пьес и 154 сонета, а также несколько других поэтических произведений.</p>
+                </details>
+                <details>
+                    <summary>В каком городе родился писатель?</summary>
+                    <p>Уильям Шекспир родился в городе Стратфорд-апон-Эйвоне (графство Уорикшир) в 1564 году</p>
+                </details>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <h3>Теперь вы истинный фанат Шекспира!1</h3>
+    <h4>Спасибо, что посетили наш сайт!</h4>
+    <a href="#nav" class="up">Наверх ↑</a>
+    <address>
+        <p>Дарья Гензе, компания СЕНЛА, Россия<br>
+            телеграм - <a href="https://t.me/genze94">@genze94</a><br>
+            email - <a href="mailto:dashagenze94@gmail.com">dashagenze94@gmail.com</a><br>
+            github - <a href="https://github.com/dashagenze">dashagenze</a></p>
+    </address>
+</footer>
+
+<script>
+    const loveSh = document.getElementById('loveSh')
+    loveSh.onclick = () => alert('Я тоже люблю Шекспира!!1');
+</script>
+
+</body>
+</html>
