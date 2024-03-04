@@ -52,6 +52,12 @@ body {
 }
 
 
+.share {
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+}
+
 /*NAVIGATION MENU*/
 
 .nav {
@@ -117,6 +123,8 @@ h2 {
 
 #bio,#hamlet:has(p) { margin: 0 300px 0 100px; }
 
+p { margin: 0 300px 0 100px; }
+
 .hamlet_pic {
     float: left;
     margin-right: 2%;
@@ -130,7 +138,7 @@ h2 {
 }
 
 #interactive h3 {
-   font-weight: 500;
+    font-weight: 500;
 }
 
 .fullform {
@@ -184,7 +192,7 @@ footer h3 {
     font-size: 25px;
 }
 
-footer h4, a, address p {
+footer h4, footer a, address p {
     color: oldlace;
 }
 
