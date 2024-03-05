@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Биография Шекспира</title>
+    <link rel="icon" href="pics/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -11,14 +12,30 @@
 <h2>Краткая биография</h2>
 <p>Уильям Шекспир был английским драматургом, поэтом и актером, чьи работы оказали огромное влияние на мировую литературу. Однако о его жизни и творчестве известно довольно мало, и многие аспекты его биографии остаются загадкой.<br><br>
     Шекспир родился в 1564 году в городе Стратфорд-апон-Эйвон. Он получил базовое образование в местной грамматической школе, но не поступил в университет. В начале 1580-х годов он переехал в Лондон, где начал свою карьеру в театре. Вскоре он стал известным актером и драматургом.<br><br>
-    Шекспир написал около 39 пьес, включая такие шедевры, как <cite>"Отелло"</cite>, <cite>"Ромео и Джульетта"</cite>, <cite>"Король Лир"</cite> и <a href="hamlet.html"><cite style="background-color: #4c343e; color: #ffb448">"Гамлет"</cite></a>. Его работы отличаются глубоким психологическим анализом персонажей, сложным сюжетом и богатством языка.<br><br>
+    Шекспир написал около 39 пьес, включая такие шедевры, как <cite>"Отелло"</cite>, <cite>"Ромео и Джульетта"</cite>, <cite>"Король Лир"</cite> и <a id="a" href="hamlet.html"><cite style="background-color: #4c343e; color: #ffb448">"Гамлет"</cite></a>. Его работы отличаются глубоким психологическим анализом персонажей, сложным сюжетом и богатством языка.<br><br>
     Шекспир также был успешным предпринимателем, владельцем театра и инвестором. Он умер в 1616 году, оставив после себя богатое наследие литературных произведений, которые продолжают вдохновлять и волновать читателей и зрителей по всему миру.</p>
 
 <script>
     let backBtn = document.getElementById('back');
     backBtn.onclick = () => history.back();
-
     let forwardBtn = document.getElementById('forth');
+    forwardBtn.style.display = 'none'
+
+    let a = document.getElementById('a')
+
+    const state = { page_id: 1, user_id: 5 };
+    let hLengh = history.length;
+    let historyState = history.state
+
+    a.onclick = () => history.pushState(state, '')
+
+    if (historyState !== null) {
+        forwardBtn.style.display = 'block'
+    }
+
+
+    console.log(history.state);
+
     forwardBtn.onclick = () => history.go(1);
 </script>
 </body>
